@@ -4,10 +4,9 @@ import data from "./data";
 function App() {
   return (
     <div>
-      {data.map((item) => {
-        const { name, img, tel } = item;
-        return <Person name={name} img={img} tel={tel} />;
-      })}
+      {data.map(({ name, img, tel }) => (
+        <Person name={name} img={img} tel={tel} />
+      ))}
     </div>
   );
 }

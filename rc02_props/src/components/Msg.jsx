@@ -1,9 +1,9 @@
-//**** * /
-//**** */
-//**** */
-
 const Msg = ({ name }) => {
-  return <h5>Hi, My name is {name}</h5>;
+  return (
+    <div>
+      <h5>Hi my name is {name}</h5>
+    </div>
+  );
 };
 
 export default Msg;
